@@ -1,0 +1,21 @@
+'use client';
+
+interface MoneyIconProps {
+  size?: number;
+}
+
+export default function MoneyIcon({ size = 24 }: MoneyIconProps) {
+  return (
+    <svg 
+      width={size} 
+      height={size} 
+      viewBox="0 0 24 24" 
+      fill="none" 
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle cx="12" cy="12" r="9" fill="#FFD700" stroke="#8B4A5C" strokeWidth="1.5"/>
+      <text x="12" y="17" textAnchor="middle" fontSize="14" fontWeight="bold" fill="#8B4A5C">$</text>
+    </svg>
+  );
+}
+
